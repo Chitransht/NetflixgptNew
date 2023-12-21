@@ -10,6 +10,7 @@ import { toggleGptSearch } from "../utils/GptSlice";
 const Header = () => {
   const dispatch = useDispatch();
   const user = useSelector((store) => store.user);
+  const showGptSearch = useSelector((store) => store.gpt.showGptSearch);
   const Navigate = useNavigate();
   const handelsignout = () => {
     signOut(auth)
@@ -47,7 +48,7 @@ const Header = () => {
             className="py-2 px-4 mx-6 bg-purple-800 text-white rounded-lg"
             onClick={handleGptSearchClick}
           >
-            GPT Search
+            {showGptSearch ? "HomePage" : "GTP Search"}
           </button>
           <img className="" src={USER_LOGO} alt="logout" />
           <button className="text-white" onClick={handelsignout}>
