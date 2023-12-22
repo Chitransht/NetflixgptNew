@@ -2,11 +2,12 @@ import React from "react";
 import GptSearchBar from "./GptSearchBar";
 import GptMovieSuggestion from "./GptMovieSuggestion";
 import { BG_LOGO } from "../utils/Constant";
+import "../components/MovieList.css"
 
 const GPTSearch = () => {
   return (
-    <>
-      <div className="fixed -z-10">
+    <div className="">
+      <div className="fixed -z-10 cont">
         <img
           src={BG_LOGO}
           alt="bg-logo"
@@ -17,7 +18,7 @@ const GPTSearch = () => {
         <GptSearchBar />
         <GptMovieSuggestion />
       </div>
-    </>
+    </div>
   );
 };
 
