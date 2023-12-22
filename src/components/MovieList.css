@@ -1,5 +1,5 @@
 .container {
   ::-webkit-scrollbar {
-    display: grid ;
+    display: none ;
   }
 }

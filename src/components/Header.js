@@ -40,10 +40,14 @@ const Header = () => {
   };
 
   return (
-    <div className="absolute w-screen px-12 py-2 bg-gradient-to-b from-black z-50 flex justify-between ">
-      <img className="w-[150px]" src={NETFLIX_LOGO} alt="logo" />
+    <div className="absolute w-screen px-12 py-2 bg-gradient-to-b from-black z-50 flex flex-col md:flex-row justify-between ">
+      <img
+        className="w-[150px] mx-auto md:mx-0"
+        src={NETFLIX_LOGO}
+        alt="logo"
+      />
       {user && (
-        <div className="p-4 flex">
+        <div className="p-4 flex justify-around">
           <button
             className="py-2 px-4 mx-6 bg-purple-800 text-white rounded-lg"
             onClick={handleGptSearchClick}
