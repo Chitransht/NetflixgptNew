@@ -19,4 +19,4 @@ export const BG_LOGO =
   "https://assets.nflxext.com/ffe/siteui/vlv3/ca6a7616-0acb-4bc5-be25-c4deef0419a7/c5af601a-6657-4531-8f82-22e629a3795e/IN-en-20231211-popsignuptwoweeks-perspective_alpha_website_large.jpg";
 
 export const OPEN_AI_GPT_KEY =
-  "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";
+  "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";

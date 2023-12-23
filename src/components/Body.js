@@ -3,6 +3,7 @@ import Login from "./Login";
 import Browse from "./Browse";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import "../components/MovieList.css";
+import CardDetails from "./CardDetails";
 
 const Body = () => {
   const appRouter = createBrowserRouter([
@@ -13,6 +14,10 @@ const Body = () => {
     {
       path: "/browse",
       element: <Browse />,
+    },
+    {
+      path: "/cardlist/:resId",
+      element: <CardDetails />,
     },
   ]);
 
